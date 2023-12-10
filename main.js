@@ -1,5 +1,4 @@
 var currentValue=0;
-var displayResult=false;
 var calc=document.getElementById("Calc");
 function clr(){
     calc.value=" ";
