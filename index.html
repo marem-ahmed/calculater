@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculater</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="form-group mb-0">
+        <input
+          class="w-100 maincolor text-light py-5"
+          type="text"
+          id="Calc"
+          name="answer"
+        />
+      </div>
+      <div class="row px-3  ">
+        <div class="col-3 p-0 text-center">
+         <input type="button" value="*" class=" successcolor  w-100  py-4 font-weight-bold rounded-0"  onclick = "display('*')" >
+          <input type="button" value="." class="  lightcolor text-light w-100  py-4  rounded-0 " onclick= "display('.')">
+          <input type="button" value="6" class=" lightcolor text-light w-100  py-4  rounded-0" onclick= "display('6')">
+          <input type="button" value="2" class=" lightcolor text-light w-100  py-4  rounded-0" onclick= "display('2')">
+          <input type="button" value="c" class=" maincolor text-light w-100  py-4  rounded-0" onclick= "clr()">
+        </div>
+        <div class="col-3 p-0 text-center">
+          <div class=""><input type="button" value="/" class=" successcolor  w-100  py-4  rounded-0" onclick= "display('/')"></div>
+          <div class=""><input type="button" value="9" class=" lightcolor text-light w-100  py-4  rounded-0 " onclick= "display('9')"></div>
+          <div class=""><input type="button" value="5" class=" lightcolor text-light w-100  py-4  rounded-0" onclick= "display('5')"></div>
+          <div class=""><input type="button" value="1" class=" lightcolor text-light w-100  py-4  rounded-0" onclick= "display('1')"></div>
+        </div>
+        <div class="col-3 p-0 text-center">
+          <div class=""><input type="button" value="-" class=" successcolor  w-100  py-4  rounded-0" onclick= "display('-')"></div>
+          <div class=""><input type="button" value="8" class=" lightcolor text-light w-100  py-4  rounded-0" onclick= "display('8')"></div>
+          <div class=""><input type="button" value="4" class=" lightcolor text-light w-100  py-4  rounded-0" onclick= "display('4')"></div>
+          <div class=""><input type="button" value="0" class=" lightcolor text-light w-100  py-4  rounded-0" onclick= "display('0')"></div>
+        </div>
+        <div class="col-3 p-0 text-center">
+          <div class=""><input type="button" value="+" class=" successcolor  w-100  py-4  rounded-0" onclick= "display('+')"></div>
+          <div class=""><input type="button" value="7" class=" lightcolor text-light w-100  py-4  rounded-0" onclick= "display('7')"></div>
+          <div class=""><input type="button" value="3" class=" lightcolor text-light w-100  py-4  rounded-0" onclick= "display('3')"></div>
+          <div class=""><input type="button" value="=" class=" maincolor text-light w-100  py-4  rounded-0" onclick="calculation()"></div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

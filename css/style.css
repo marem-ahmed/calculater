@@ -1,0 +1,21 @@
+:root{
+    --main-color:#161A30;
+    --default-color:#31304D;
+    --light-color:#B6BBC4;
+    --success-color:#F0ECE5;
+}
+.maincolor{
+    background-color: var(--main-color)
+}
+.defaultcolor{
+    background-color: var(--default-color)
+}
+.lightcolor{
+    background-color: var(--light-color)
+}
+.successcolor{
+    background-color: var(--success-color)
+}
+input{
+    font-size: 1.875rem;
+}
