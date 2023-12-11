@@ -1,15 +1,27 @@
-var currentValue=0;
+var displayResult=false;
+var currentDisplay="0";
 var calc=document.getElementById("Calc");
 function clr(){
-    calc.value=" ";
+    displayResult=false;
+    currentDisplay="0"
+    updated()
 }
 function display(value){
-    calc.value +=value;
+    if(displayResult||currentDisplay==="0"){
+        currentDisplay=value;
+    }else{
+        currentDisplay+=value
+    }
+    displayResult=false
+    updated()
     
 }
+ function updated() {
+    calc.value=currentDisplay;
+}
 function calculation(){
-     var result=eval(calc.value);
-   
+    var result=eval(currentDisplay);
     calc.value=result;
+    displayResult=true;
 }
 
